@@ -27,15 +27,15 @@
 
         default_layer {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F       &kp P     &kp B                                             &kp J  &kp L         &kp U      &kp Y    &kp SEMI  &kp BSPC
-&kp ESC    &kp A  &kp R  &kp S       &kp T     &kp G                                             &kp M  &kp N         &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C       &kp D     &kp V     &kp LCTRL  &kp LSHFT  &mo 1  &kp LSHFT  &kp K  &kp H         &kp COMMA  &kp DOT  &kp FSLH  &kp RET
-                         &kp C_MUTE  &kp LALT  &kp LCMD  &kp SPACE  &mo 3      &none  &mo RAISE  &none  &mo FUNCTION  &none
+&kp TAB    &kp Q  &kp W  &kp F       &kp P     &kp B                                           &kp J   &kp L   &kp U      &kp Y    &kp SEMI  &kp BSPC
+&kp ESC    &kp A  &kp R  &kp S       &kp T     &kp G                                           &kp M   &kp N   &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C       &kp D     &kp V     &kp LCTRL  &kp LSHFT  &kp N1  &kp N3  &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH  &kp RET
+                         &kp C_MUTE  &kp LALT  &kp LCMD  &kp SPACE  &mo 3      &kp N2  &kp N4  &kp N5  &kp N6  &kp N7
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         function_layer {
