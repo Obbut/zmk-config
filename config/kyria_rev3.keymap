@@ -21,10 +21,6 @@
 #define FUNCTION 1
 #define RAISE 2
 
-&led_strip {
-    chain-length = <50>;
-};
-
 / {
     macros {
         // Source: https://zmk.dev/docs/behaviors/macros
@@ -83,10 +79,10 @@
 
         default_layer {
             bindings = <
-&kp TAB                    &kp Q  &kp W  &kp F       &kp P     &kp B                                       &kp J   &kp L   &kp U      &kp Y    &kp SEMI  &kp BSPC
-&rhyper_behavior 4 ESCAPE  &kp A  &kp R  &kp S       &kp T     &kp G                                       &kp M   &kp N   &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT                  &kp Z  &kp X  &kp C       &kp D     &kp V     &kp LCTRL  &mo 2  &mo 1   &kp N1  &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH  &kp RET
-                                         &kp C_MUTE  &kp LALT  &kp LCMD  &kp SPACE  &mo 3  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6
+&kp TAB                    &kp Q  &kp W  &kp F       &kp P     &kp B                                             &kp J  &kp L      &kp U      &kp Y    &kp SEMI  &kp BSPC
+&rhyper_behavior 4 ESCAPE  &kp A  &kp R  &kp S       &kp T     &kp G                                             &kp M  &kp N      &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT                  &kp Z  &kp X  &kp C       &kp D     &kp V     &kp LCTRL  &none  &mo 1  &mo 3          &kp K  &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp RET
+                                         &kp C_MUTE  &kp LALT  &kp LCMD  &kp SPACE  &mo 3  &none  &kp BACKSPACE  &mo 2  &kp ENTER  &none
             >;
 
             sensor-bindings =
@@ -103,7 +99,7 @@
             >;
         };
 
-        raise {
+        symbol {
             bindings = <
 &kp GRAVE  &kp EXCL     &kp AT     &kp LBRC  &kp RBRC  &none                                             &none   &kp N7  &kp N8  &kp N9  &kp MINUS   &trans
 &trans     &kp HASH     &kp DLLR   &kp LPAR  &kp RPAR  &kp COLON                                         &none   &kp N4  &kp N5  &kp N6  &kp PLUS    &kp EQUAL
@@ -112,7 +108,7 @@
             >;
         };
 
-        lower {
+        move {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                                  &none     &none     &none   &none      &kp DEL  &kp BSPC
 &trans  &trans  &trans  &trans  &trans  &trans                                  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &none
@@ -131,3 +127,5 @@
         };
     };
 };
+
+&led_strip { chain-length = <50>; };
