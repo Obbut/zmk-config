@@ -21,6 +21,10 @@
 #define FUNCTION 1
 #define RAISE 2
 
+&led_strip {
+    chain-length = <50>;
+};
+
 / {
     macros {
         // Source: https://zmk.dev/docs/behaviors/macros
