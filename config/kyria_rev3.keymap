@@ -82,10 +82,10 @@
 
         default_layer {
             bindings = <
-&kp TAB                    &kp Q  &kp W  &kp F       &kp P     &kp B                                             &kp J  &kp L      &kp U      &kp Y    &kp SEMI  &kp BSPC
-&rhyper_behavior 4 ESCAPE  &kp A  &kp R  &kp S       &kp T     &kp G                                             &kp M  &kp N      &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT                  &kp Z  &kp X  &kp C       &kp D     &kp V     &kp LCTRL  &none  &mo 1  &mo 3          &kp K  &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp RET
-                                         &kp C_MUTE  &kp LALT  &kp LCMD  &kp SPACE  &mo 3  &none  &kp BACKSPACE  &mo 2  &kp ENTER  &none
+&kp TAB                   &kp Q  &kp W  &kp F       &kp P     &kp B                                             &kp J  &kp L      &kp U      &kp Y    &kp SEMI  &kp BSPC
+&mt RS(RA(RC(RCMD))) ESC  &kp A  &kp R  &kp S       &kp T     &kp G                                             &kp M  &kp N      &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT                 &kp Z  &kp X  &kp C       &kp D     &kp V     &kp LCTRL  &none  &mo 1  &mo 3          &kp K  &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp RET
+                                        &kp C_MUTE  &kp LALT  &kp LCMD  &kp SPACE  &mo 3  &none  &kp BACKSPACE  &mo 2  &kp ENTER  &none
             >;
 
             sensor-bindings =
