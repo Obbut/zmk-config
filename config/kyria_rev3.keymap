@@ -79,6 +79,16 @@
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
         };
+
+        lt_hp: lt_hp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_HP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -86,10 +96,10 @@
 
         default_layer {
             bindings = <
-&kp TAB                   &kp Q  &kp W  &kp F       &kp P      &kp B                                                                                           &kp J        &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
-&mt RS(RA(RC(RCMD))) ESC  &kp A  &kp R  &kp S       &kp T      &kp G                                                                                           &kp M        &kp N  &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT                 &kp Z  &kp X  &kp C       &kp D      &kp V     &kp LC(LG(LS(NUMBER_4)))  &kp LEFT_ALT  &mo 1                  &kp RS(RA(RC(RG(A))))  &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RET
-                                        &kp C_MUTE  &kp LCTRL  &kp LGUI  &mo 3                     &kp SPACE     &kp RS(RA(RC(RG(A))))  &kp SPACE              &lt 2 SPACE  &mo 3  &kp F18
+&kp TAB                   &kp Q  &kp W  &kp F       &kp P      &kp B                                                                                           &kp J           &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
+&mt RS(RA(RC(RCMD))) ESC  &kp A  &kp R  &kp S       &kp T      &kp G                                                                                           &kp M           &kp N  &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT                 &kp Z  &kp X  &kp C       &kp D      &kp V     &kp LC(LG(LS(NUMBER_4)))  &kp LEFT_ALT  &mo 1                  &kp RS(RA(RC(RG(A))))  &kp K           &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RET
+                                        &kp C_MUTE  &kp LCTRL  &kp LGUI  &mo 3                     &kp SPACE     &kp RS(RA(RC(RG(A))))  &kp SPACE              &lt_hp 2 SPACE  &mo 3  &kp F18
             >;
 
             sensor-bindings =
