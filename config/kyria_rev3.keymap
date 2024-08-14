@@ -96,10 +96,10 @@
 
         default_layer {
             bindings = <
-&kp TAB                   &kp Q  &kp W  &kp F       &kp P      &kp B                                                                                           &kp J           &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
-&mt RS(RA(RC(RCMD))) ESC  &kp A  &kp R  &kp S       &kp T      &kp G                                                                                           &kp M           &kp N  &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT                 &kp Z  &kp X  &kp C       &kp D      &kp V     &kp LC(LG(LS(NUMBER_4)))  &kp LEFT_ALT  &mo 1                  &kp RS(RA(RC(RG(A))))  &kp K           &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RET
-                                        &kp C_MUTE  &kp LCTRL  &kp LGUI  &mo 3                     &kp SPACE     &kp RS(RA(RC(RG(A))))  &kp SPACE              &lt_hp 2 SPACE  &mo 3  &kp F18
+&kp TAB                   &kp Q  &kp W  &kp F       &kp P      &kp B                                                                             &kp J  &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
+&mt RS(RA(RC(RCMD))) ESC  &kp A  &kp R  &kp S       &kp T      &kp G                                                                             &kp M  &kp N  &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT                 &kp Z  &kp X  &kp C       &kp D      &kp V     &kp LC(LG(LS(NUMBER_4)))  &kp LEFT_ALT  &mo 1  &kp RS(RA(RC(RG(F13))))  &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RET
+                                        &kp C_MUTE  &kp LCTRL  &kp LGUI  &mo 3                     &kp SPACE     &none  &kp SPACE                &mo 2  &mo 3  &kp F18
             >;
 
             sensor-bindings =
