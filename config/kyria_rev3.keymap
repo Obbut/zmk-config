@@ -109,10 +109,10 @@
 
         function_layer {
             bindings = <
-&ext_power EP_ON   &kp F11  &kp F12  &kp F13          &kp F14  &kp F15                                                    &none         &out OUT_BLE  &out OUT_USB  &none         &trans  &bt BT_CLR
-&ext_power EP_OFF  &kp F6   &kp F7   &kp F8           &kp F9   &kp F10                                                    &none         &bt BT_SEL 4  &none         &none         &trans  &trans
-&trans             &kp F1   &kp F2   &kp F3           &kp F4   &kp F5   &trans  &trans  &studio_unlock   &bootloader      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans
-                                     &rgb_ug RGB_TOG  &trans   &trans   &trans  &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans        &trans        &none
+&ext_power EP_ON   &kp F11  &kp F12  &kp F13          &kp F14  &kp F15                                                            &none         &out OUT_BLE  &out OUT_USB  &none         &trans  &bt BT_CLR
+&ext_power EP_OFF  &kp F6   &kp F7   &kp F8           &kp F9   &kp F10                                                            &none         &bt BT_SEL 4  &none         &none         &trans  &trans
+&trans             &kp F1   &kp F2   &kp F3           &kp F4   &kp F5   &trans  &studio_unlock  &trans           &bootloader      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans
+                                     &rgb_ug RGB_TOG  &trans   &trans   &trans  &trans          &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans        &trans        &none
             >;
 
             sensor-bindings = <&inc_dec_kp F15 F14>;
